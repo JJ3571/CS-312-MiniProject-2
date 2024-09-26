@@ -1,0 +1,28 @@
+{
+  "name": "cs-312-miniproject-2",
+  "version": "1.0.0",
+  "description": "Basic API that dynamically displays content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module"
+}
