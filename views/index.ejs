@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>CS312_Mini_Project_2</title>
 </head>
 <body>
-    <p>Test</p>
+    <div class="container">
+        <h1>Movie Info:</h1>
+        <form action="/movie" method="POST">
+            <input type="text" id="title" name="title" placeholder="Enter Movie Title:" required>
+            <button type="submit">Get Movie Info</button>
+        </form>
+
+        <% if (movie) { %>
+            <div class="movie-info">
+                <h2><%= movie.Title %> (<%= movie.Year %>)</h2>
+                <p>Genre: <%= movie.Genre %></p>
+                <p>Plot: <%= movie.Plot %></p>
+                <p>IMDB Rating: <%= movie.imdbRating %></p>
+                <img src="<%= poster %>" alt="Movie Poster">
+            </div>
+        <% } else if (error) { %>
+            <p><%= error %></p>
+        <% } %>
+    </div>
 </body>
 </html>
