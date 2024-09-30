@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 // --- Cors Setup --- 
-import cors from 'cors'
+import cors from "cors";
 
 const corsOptions = {
     origin: 'localhost:3000',
